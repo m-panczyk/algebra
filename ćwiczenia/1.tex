@@ -6,7 +6,18 @@
 \usetikzlibrary{datavisualization.formats.functions}
 \title{ćwiczenia 1}
 
+
 \begin{document}
+\newcommand{\aa}
+\newcommand{\aaa}
+\newcommand{\bb}
+\newcommand{\bbb}
+\newcommand{\zz}
+\newcommand{\zzz}
+\newcommand{\mm}
+\newcommand{\mmm}
+\newcommand{\pp}
+\newcommand{\ppp}
 \maketitle
 
 \begin{enumerate}
@@ -89,7 +100,7 @@
         b&=-3-2\\
         b&=-5
         \end{aligned}
-        \end{equation}
+        \end{equation*}
         \[z=2-5i\]
     \item{}
         \begin{equation*}
@@ -109,7 +120,7 @@
         a+3&=8\\
         a&=5
         \end{aligned}
-        \end{equation}
+        \end{equation*}
         \[z=5-i\]
     \end{enumerate}
 \item{tego gówna jeszcze nie rozumiem}
@@ -147,7 +158,7 @@
         \begin{aligned}
         \varphi&=0
         \end{aligned}
-        \end{equation}
+        \end{equation*}
         \[z=6(\cos0+i\sin0)\]
         \[z=6e^0\]
     \item{}
@@ -204,6 +215,115 @@
         \end{equation*}
         \[z=10(\cos\frac{11\pi}{6}+i\sin\frac{11\pi}{6})\]
         \[z=10e^\frac{11\pi}{6}\]
+    \end{enumerate}
+\item{}
+    \begin{enumerate}
+    \item{}
+        \(3(\cos\frac{\pi}{5}+i\sin\frac{\pi}{5})(2-2i)\)
+        \begin{equation*}
+        \begin{aligned}
+        z&=2-2i\\
+        |z|&=\sqrt{2^2+(-2)^2}=\sqrt{8}=2\sqrt2
+        \end{aligned}
+        \qquad
+        \begin{aligned}
+        \cos\varphi&=\frac{2}{2\sqrt2}=\frac{2\sqrt2}{2\sqrt2\cdot\sqrt2}=\frac{\sqrt2}{2}\\
+        \sin\varphi&=\frac{-2}{2\sqrt2}=-\frac{\sqrt2}{2}
+        \end{aligned}
+        \qquad
+        \begin{aligned}
+        \varphi&=\frac{7\pi}{4}
+        \end{aligned}
+        \end{equation*}
+        \[z=2\sqrt2(\cos\frac{7\pi}{4}+i\sin\frac{7\pi}{4})\]
+        \(3(\cos\frac{\pi}{5}+i\sin\frac{\pi}{5})2\sqrt2(\cos\frac{7\pi}{4}+i\sin\frac{7\pi}{4}))=6\sqrt2(\cos(\frac{\pi}{5}+\frac{7\pi}{4})+i\sin(\frac{\pi}{5}+\frac{7\pi}{4})=6\sqrt2(\cos\frac{4\pi+35\pi}{20}+i\sin\frac{39\pi}{20})\)
+    \item{}
+        \(4e^{i\frac{4\pi}{7}}(-1+i\sqrt3)\)
+        \begin{equation*}
+        \begin{aligned}
+        z_1&=-1+i\sqrt3\\
+        |z_1|&=\sqrt{-1^2+(\sqrt3)^2}=\sqrt4=2
+        \end{aligned}
+        \qquad
+        \begin{aligned}
+        \cos\varphi&=\frac{-1}{2}=-\frac12\\
+        \sin\varphi&=\frac{\sqrt3}{2}
+        \end{aligned}
+        \qquad
+        \begin{aligned}
+        \varphi&=\frac{2\pi}{3}\\
+        \end{aligned}
+        \end{equation*}
+        \[z=2e^{i\frac{2\pi}{3}}\]
+        \(4e^{i\frac{4\pi}{7}}2e^{i\frac{2\pi}{3}}=8e^{i(\frac{4\pi}{7}+\frac{2\pi}{3})}=8e^{i\frac{26\pi}{21}}\)
+    \item{}
+        \renewcommand{\aa}{0}
+        \renewcommand{\bb}{4}
+        \renewcommand{\mmm}{5}
+        \renewcommand{\ppp}{\frac{\pi}{9}}
+        \renewcommand{\mm}{4}
+        \renewcommand{\pp}{\frac{\pi}{2}}
+
+        \(\frac{\bb i}{\mmm(\cos\ppp+i\sin\ppp)}\)
+        \begin{equation*}
+        \begin{aligned}
+        z_1&=\aa+\bb i\\
+        |z_1|&=\sqrt{\aa^2+(\bb)^2}=\mm
+        \end{aligned}
+        \qquad
+        \begin{aligned}
+        \cos\varphi&=\frac{\aa}{\mm}=0\\
+        \sin\varphi&=\frac{\bb}{\mm}=1
+        \end{aligned}
+        \qquad
+        \begin{aligned}
+        \varphi&=\pp
+        \end{aligned}
+        \end{equation*}
+        \renewcommand{\z}{\mm(\cos\pp+i\sin\pp)}
+        \[z=\z\]
+        \(\frac{\z}{\mmm(\cos\ppp+i\sin\ppp)}=\frac45(\cos(\pp-\ppp)+i\sin(\pp-\ppp))=\frac45(\frac{9\pi-2\pi}+i\sin\frac{7\pi}{9})\)
+    \end{enumerate}
+\item{}
+    \begin{enumerate}
+    \item{}
+        \((\sqrt3+i)^{67}\)
+                        \renewcommand{\mm}{2}
+                        \renewcommand{\aa}{\sqrt3}
+                        \renewcommand{\bb}{1}
+                        \renewcommand{\pp}{\frac{\pi}{6}}
+        \begin{equation*}
+                \begin{aligned}
+                        |z|&=\sqrt{(\sqrt{3})^2+1^2}=\sqrt4=2\\
+                \end{aligned}
+                \qquad
+                \begin{aligned}
+                        \cos\varphi&=\frac{\aa}{\mm}\\
+                        \sin\varphi&=\frac{\bb}{\mm}
+                \end{aligned}
+                \qquad
+                \begin{aligned}
+                        \varphi&=\pp
+                \end{aligned}
+        \end{equation*}
+        \(\mm^{67}(\cos(67\cdot\pp)+i\sin(67\cdot\pp))=2^{67}(\cos\frac{7\pi}{6}+\sin\frac{7\pi}{6})=2^{67}(-\frac{\sqrt3}{2}+i(-\frac12))=2^{66}(-\sqrt3-i)=-2^{66}\sqrt3-2^{66}i\)
+    \item{}
+            \((1-i)^7\)
+            \[
+            \begin{aligned}
+            |z|&=\sqrt2
+            \end{aligned}
+            \qquad
+            \begin{aligned}
+                    \cos\varphi&=\frac{1}{\sqrt2}\cdot\frac{\sqrt2}{\sqrt2}=\frac{\sqrt2}{2}\\
+                    \sin\varphi&=\frac{-1}{\sqrt2}\cdot\frac{\sqrt2}{\sqrt2}=-\frac{\sqrt2}{2}
+            \end{aligned}
+            \qquad
+            \begin{aligned}
+                    \varphi&=\frac{7\pi}{4}
+            \end{aligned}
+            \]
+            \((\sqrt2(\cos\frac{7\pi}{4}+i\sin\frac{7\pi}{4}))^7=8\sqrt2(\cos(7\frac{7\pi}{4})+i\sin(8\frac{\pi}{4}))=8\sqrt2(\cos\frac{\pi}{4}+i\sin\frac{\pi}{4})=8\sqrt2(\frac{\sqrt2}{2}+\frac{\sqrt2}{2}i)=8+8i\)
     \end{enumerate}
 \end{enumerate}
 \end{document}
